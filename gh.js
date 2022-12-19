@@ -15,7 +15,7 @@ window.addEventListener('scroll', function() {
     e = document.documentElement;
     theFill.setAttributeNS(null, "stroke-dasharray", l);
     theFill.setAttributeNS(null, "stroke-dashoffset", l);
-    dashoffset = l - window.scrollY * l / (e.scrollHeight - e.clientHeight);
+    dashoffset = l - window.scrollY * 0.39 *l / (e.scrollHeight - e.clientHeight);
     console.log('window.scrollY', window.scrollY, 'scrollTop', e.scrollTop, 'scrollHeight', e.scrollHeight, 'clientHeight', e.clientHeight, 'dash-offset', dashoffset);
     theFill.setAttributeNS(null, "stroke-dashoffset", dashoffset);
   })
